@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+    <title>Integrando HTML com JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Integrando HTML com JavaScript</h1>
+        <p>Preencha os campos com números, de modo que o segundo número seja maior que o primeiro.</p>
+        <form>
+            <input type="number" id="first-number" placeholder="Primeiro número" required>
+            <p id="error-message" class="error-message"></p>
+            <input type="number" id="second-number" placeholder="Segundo número" required>
+            <button type="button" id="btn-submit" onclick="validar()">Submit</button>
+        </form>
+        <p id="success-message" class="success-message"></p>
+    </div>
+</body>
+</html>
