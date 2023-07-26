@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Bootstrap by Guilherme Kiss</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Formulário de Cadastro</h2>
+                <form>
+                    <label class="form-label" for="nome">Seu nome:</label>
+                    <input class="form-control" type="text" id="nome" placeholder="Guilherme Kiss">
+                    <label for="email" class="form-label">Seu e-mail:</label>
+                    <input id="email" type="email" class="form-control" placeholder="exemplo@exemplo.com">
+                    <label for="telefone" class="form-label">Seu telefone:</label>
+                    <input id="telefone" type="tel" class="form-control">
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>2023 © Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-kiss/">Guilherme Kiss</a> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./jquery.mask.min.js"></script> 
+    <script>
+        $('document').ready(function() {
+            $('#telefone').mask('(00) 00000-0000', {
+            placeholder: '(DDD)XXXXX-XXXX'
+            })
+        })
+    </script>
+
+</body>
+</html>

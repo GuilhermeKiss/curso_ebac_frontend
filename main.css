@@ -1,0 +1,12 @@
+body {
+    background-color: #ccc;
+}
+
+.col input {
+    margin-bottom: 16px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 32px;
+}
