@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Bootstrap Avançado - By Guilherme Kiss</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: rgb(4,4,4);
+            background: radial-gradient(circle, rgba(4,4,4,0.8935245973389356) 66%, rgba(83,15,178,0.6806394432773109) 100%);
+            font-family: 'Bungee', cursive;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1,h2 {
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="p-3 text-center border-bottom"> Exercício Bootstrap Avançado - EBAC - By Guilherme Kiss</h1>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="lib/Planeta e nave.jpg">
+                    <div class="carousel-caption">
+                        Foto de nave espacial e planeta ao fundo.
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="lib/Nave e cidade.jpg">
+                    <div class="carousel-caption">
+                        Foto de naves espaciais sobrevoando uma cidade.
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="lib/perola negra.jpg">
+                    <div class="carousel-caption">
+                        Foto do barco Pérola Negra navegando em oceano.
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+    </div>
+    <div class="container mt-3">
+        <h2>Confira nosso catálogo de jogos!</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header bg-dark text-light">
+                        Battlefield 2042
+                    </header>
+                    <img src="https://encurtador.com.br/cmwS6" class="img-fluid">
+                    <div class="card-body bg-dark text-light">
+                        <p class="card-text">Battlefield™ 2042 é um jogo de tiro em primeira pessoa que marca o retorno à emblemática guerra total da franquia.</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                    <footer class="card-footer bg-secondary text-light">
+                        Dísponivel para PC e consoles.
+                    </footer>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header bg-dark text-light">
+                        EA SPORTS FC 24
+                    </header>
+                    <img src="https://encurtador.com.br/EGKS3" class="img-fluid">
+                    <div class="card-body bg-dark text-light">
+                        <p class="card-text">O EA SPORTS FC™ 24 traz o Jogo de Todo Mundo: a experiência mais realista de futebol com o HyperMotionV, PlayStyles otimizada pela Opta, e uma Frostbite™ Engine melhorada.</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                    <footer class="card-footer bg-secondary text-light">
+                        Dísponivel apenas para PS5.
+                    </footer>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header bg-dark text-light">
+                        The Sims 4
+                    </header>
+                    <img src="https://encurtador.com.br/dhAF9" class="img-fluid">
+                    <div class="card-body bg-dark text-light">
+                        <p class="card-text">Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                    <footer class="card-footer bg-secondary text-light">
+                        Dísponivel para PC e consoles.
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-light text-center p-3">2023 © Desenvolvido por <a class="link-warning" href="https://www.linkedin.com/in/guilherme-kiss/">Guilherme Kiss</a> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
