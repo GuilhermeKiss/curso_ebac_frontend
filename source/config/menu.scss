@@ -1,0 +1,17 @@
+@use '../config/reset.scss';
+@use '../config/variaveis.scss';
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+    
+    li a {
+        color: variaveis.$corDoTextoButton;
+        text-decoration: none;
+    }
+}
+
